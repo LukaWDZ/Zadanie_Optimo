@@ -72,7 +72,7 @@ main {
     }
 .container3 {
     width: 100%;
-    height: 600px;
+    height: 430px;
     display: block;
     position: relative;
 }
@@ -81,12 +81,37 @@ main {
         display: block;
         position: absolute;
         width: 150px;
-        height: 300px;
+        height: 400px;
         box-sizing: border-box;
         background: #0000FF;
         border: 2px solid #000000;
-        left: 50%;
-        transform: translateX(-50%);    
+        left: 100px;  
+        text-align: center;
+        padding-top: 20px;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+@media (min-width: 583px) {
+    main{
+        height: 100%;
+    }
+    .container1, .container2, .container3 {
+        position: absolute;
+        width: 50%;
     }
 
+    .container1, .container2{
+        left:0;
+    }
+
+    .container2{
+        top: 306px;
+    }
+    .container3{
+        left: 300px;
+    }
+    .rectangle {
+        background: #C83737;
+    }
+}
 
